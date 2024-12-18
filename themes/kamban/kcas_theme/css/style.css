@@ -1,0 +1,297 @@
+/* General Layout */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.row {
+  display: flex;
+}
+
+/* Sidebar Styles */
+.sidebar-left {
+  background-color:transparent;
+  padding: 20px;
+  float: left;
+}
+
+.sidebar-right {
+  background-color:transparent;
+  padding: 20px;
+  float: right;
+}
+
+/* Main Content */
+.content-section {
+  background-color:transparent;
+  padding: 20px;
+}
+
+/* Additional Padding and Styling */
+.top-header,
+.logo-header,
+.menu-header {
+  background-color: #fff;
+  padding: 10px 0;
+}
+
+.slider-wrapper {
+  position: relative;
+  height: 300px;
+  overflow: hidden;
+}
+
+.news-section,
+.gallery-section {
+  margin-top: 20px;
+}
+.footer{
+  background-color: transparent;
+}
+.footer ul {
+  list-style-type: none;  /* Remove bullets */
+  padding-left: 0;        /* Remove left padding */
+  margin: 0;              /* Remove margin */
+}
+
+/* Remove underlines from links in the footer */
+.footer a {
+  text-decoration: none;  /* Remove underline */
+  color: inherit;         /* Use the existing color */
+}
+
+/* Optional: Add underline on hover */
+.footer a:hover {
+  color: red;
+}
+
+/* Style list items as inline-block */
+.footer li {
+  display:block;
+  margin:0; /* Add space between items */
+}
+.site-header {
+  background-color: #fff; /* Header background color */
+  padding: 20px 0; /* Add some padding */
+}
+
+.logo img {
+  max-width: 100%; /* Make the logo responsive */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.blue-bottom {
+  background-color: blue; /* Adjust color as needed */
+  padding: 20px 0; /* Add padding for top and bottom */
+}
+
+.blocks {
+  display: flex;
+  justify-content: space-between; /* Equal space between blocks */
+  align-items: stretch; /* Make sure blocks stretch to the same height */
+}
+
+.block {
+  flex: 1; /* Each block takes equal space */
+  margin: 0 10px; /* Space between blocks */
+  padding: 10px; /* Inner padding for content */
+  color: white; /* Text color */
+  text-align: center; /* Center the text */
+}
+
+/* Optional: To avoid extra margin on first and last blocks */
+.block:first-child {
+  margin-left: 0;
+}
+
+.block:last-child {
+  margin-right: 0;
+}
+.gallery {
+  background-color: #f4f4f4; /* Adjust as needed */
+  padding: 20px;
+  color: #333;
+}
+
+.gallery-title {
+  text-align: left;
+  font-size: 24px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.gallery-top {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.gallery-top .block {
+  flex: 1;
+  padding: 20px;
+  text-align: center;
+}
+.blue-bottom {
+  background-color: #005cbf; /* Blue background */
+  padding: 20px 30px;
+  color: white;
+}
+
+.blue-bottom-blocks {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px; /* Add spacing between the blocks */
+}
+
+.blue-bottom-blocks .block {
+  flex: 1; /* Ensure equal width for all blocks */
+  text-align: left;
+  color: white;
+}
+
+.blue-bottom-blocks .block h3 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #ffd700; /* Yellow color for headings */
+}
+
+.blue-bottom-blocks .block p,
+.blue-bottom-blocks .block a {
+  font-size: 16px;
+  margin: 5px 0;
+  color: white;
+  text-decoration: none;
+}
+
+.blue-bottom-blocks .block a:hover {
+  text-decoration: underline;
+}
+/* Layout */
+.info-bits-container {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  background-color: #f9f9f9; /* Light background for contrast */
+}
+
+/* Recent Posts Styling */
+.recent-posts, .events-activities {
+  flex: 1;
+
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 15px;
+}
+
+/* Title Styles */
+.recent-posts h2, .events-activities h2 {
+  font-size: 20px;
+  color: #b00b0b; /* Dark red color */
+  border-bottom: 2px solid #b00b0b;
+  margin-bottom: 15px;
+}
+
+/* Post Items */
+.post-item, .event-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.post-item img, .event-item img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.post-item div, .event-item div {
+  flex: 1;
+}
+
+.post-item h3, .event-item h3 {
+  font-size: 16px;
+  color: #333;
+  margin: 0;
+  line-height: 1.4;
+}
+
+.post-item p, .event-item p {
+  font-size: 14px;
+  color: #555;
+  margin: 5px 0 0;
+}
+
+.post-item span, .event-item span {
+  font-size: 12px;
+  color: #777;
+  font-style: italic;
+}
+
+/* Hover Effects */
+.post-item:hover h3, .event-item:hover h3 {
+  color: #b00b0b; /* Highlight effect */
+  text-decoration: underline;
+}
+@media (max-width: 768px) {
+  .info-bits-container {
+    flex-direction: column;
+  }
+}
+.top-header {
+  background-color: #f8f9fa; /* Light gray background */
+  padding: 10px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.top-header ul {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+  margin: 0;
+  padding: 0;
+}
+
+.top-header li {
+  display: inline;
+}
+
+.top-header a {
+  color: #002d62; /* Dark navy blue color */
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+}
+
+.top-header a:hover {
+  color: #ff4500; /* Highlight color */
+}
+
+.top-header a img {
+  width: 24px;
+  height: 24px;
+  margin-right: 5px;
+}
+.copy{
+  background-color: #005cbf;
+}
+
+
+
+
+
+

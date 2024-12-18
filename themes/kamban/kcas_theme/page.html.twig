@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <head-placeholder token="{{ placeholder_token }}"></head-placeholder>
+    <title>{{ head_title|safe_join(' | ') }}</title>
+    <css-placeholder token="{{ placeholder_token }}"></css-placeholder>
+    <js-placeholder token="{{ placeholder_token }}"></js-placeholder>
+    <!-- Ensure the correct path for the external CSS -->
+    <link rel="stylesheet" href="{{ directory }}/css/external.css">
+</head>
+<body>
+
+   <!-- Top Header -->
+<header class="top-header">
+    {% if page.top_header %}
+        <div class="container">
+            <ul class="top-header-menu">
+                {{ page.top_header }}
+            </ul>
+        </div>
+    {% endif %}
+</header>
+
+
+    <!-- Logo and Banner Header -->
+    <header class="logo-header">
+        {% if page.logo_header %}
+            <div class="container">
+                {{ page.logo_header }}
+            </div>
+        {% endif %}
+    </header>
+
+    <!-- Menu Header with Dropdowns -->
+    <nav class="menu-header">
+        {% if page.menu_header %}
+            <div class="container">
+                {{ page.menu_header }}
+            </div>
+        {% endif %}
+    </nav>
+
+    <!-- Slider Section -->
+    <section class="slider">
+        {% if page.slider %}
+            <div class="container slider-wrapper">
+                {{ page.slider }}
+            </div>
+        {% endif %}
+    </section>
+
+    <!-- Main Content with Left and Right Sidebars -->
+    <section class="main-content">
+        <div class="container">
+            <div class="row">
+                <!-- Left Sidebar -->
+                {% if page.sidebar_first %}
+                    <aside class="sidebar-left col-md-3">
+                        {{ page.sidebar_first }}
+                    </aside>
+                {% endif %}
+
+                <!-- Main Content -->
+                <div class="content-section col-md-6">
+                    {{ page.content }}
+                </div>
+
+                <!-- Right Sidebar -->
+                {% if page.sidebar_second %}
+                    <aside class="sidebar-right col-md-3">
+                        {{ page.sidebar_second }}
+                    </aside>
+                {% endif %}
+            </div>
+        </div>
+    </section>
+    <div class="info-bits-container">
+  <div class="recent-posts">
+    {{ page.recent_posts }}
+  </div>
+  <div class="events-activities">
+    {{ page.events_activities }}
+  </div>
+</div>
+
+
+    <!-- Gallery of 6 Images -->
+    <div class="gallery">
+  <div class="gallery-title">
+    {{ page.gallery_title }}
+  </div>
+  <div class="gallery-top">
+    <div class="block gallery-left">
+      {{ page.gallery_top_left }}
+    </div>
+    <div class="block gallery-center">
+      {{ page.gallery_top_center }}
+    </div>
+    <div class="block gallery-right">
+      {{ page.gallery_top_right }}
+    </div>
+  </div>
+</div>
+
+
+    <!-- Blue Bottom Section -->
+<div class="blue-bottom">
+  <div class="blue-bottom-blocks">
+    <div class="block">
+      {{ page.blue_bottom_block_1 }}
+    </div>
+    <div class="block">
+      {{ page.blue_bottom_block_2 }}
+    </div>
+    <div class="block">
+      {{ page.blue_bottom_block_3 }}
+    </div>
+    <div class="block">
+      {{ page.blue_bottom_block_4 }}
+    </div>
+  </div>
+</div>
+
+
+
+<footer class="footer">
+    <div class="container">
+        <div class="col-md-3">
+            {{ page.footer_first }}
+        </div>
+        <div class="col-md-3">
+            {{ page.footer_second }}
+        </div>
+        <div class="col-md-3">
+            {{ page.footer_third }}
+        </div>
+        <div class="col-md-3">
+            {{ page.footer_fourth }}
+        </div>
+    </div>
+</footer>
+<copy block>
+  <div class="copy">
+  {{page.copy}}
+  </div>
+
+
+
+    <js-bottom-placeholder token="{{ placeholder_token }}"></js-bottom-placeholder>
+</body>
+</html>
+

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <head-placeholder token="{{ placeholder_token }}">
+    <title>{{ head_title|safe_join(' | ') }}</title>
+    <css-placeholder token="{{ placeholder_token }}">
+    <js-placeholder token="{{ placeholder_token }}">
+    <link rel="stylesheet" href="{{ base_path ~ directory }}/css/external.css">
+  </head>
+  <body>
+
+    <header class="site-header">
+      {% if page.header %}
+        <div class="container">
+          {{ page.header }}
+        </div>
+      {% endif %}
+    </header>
+
+    <nav class="navigation">
+      {% if page.primary_menu %}
+        <div class="primary-menu">
+          {{ page.primary_menu }}
+        </div>
+      {% endif %}
+      {% if page.secondary_menu %}
+        <div class="secondary-menu">
+          {{ page.secondary_menu }}
+        </div>
+      {% endif %}
+    </nav>
+
+    <main role="main" class="main-content">
+      <div class="container">
+        <section>
+          {{ page.content }}
+        </section>
+
+        {% if page.sidebar_first %}
+          <aside class="sidebar-first">
+            {{ page.sidebar_first }}
+          </aside>
+        {% endif %}
+
+        {% if page.sidebar_second %}
+          <aside class="sidebar-second">
+            <div class="sidebar-background-image">
+              {{ page.sidebar_second }}
+            </div>
+          </aside>
+        {% endif %}
+      </div>
+    </main>
+
+    <div class="blue-bottom">
+      <div class="container">
+        <div class="blocks">
+          <div class="block">
+            <!-- Placeholder for Block 1 -->
+          </div>
+          <div class="block">
+            <!-- Placeholder for Block 2 -->
+          </div>
+          <div class="block">
+            <!-- Placeholder for Block 3 -->
+          </div>
+          <div class="block">
+            <!-- Placeholder for Block 4 -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="site-footer">
+      {% if page.footer %}
+        <div class="container">
+          {# Render footer links as plain text by removing tags #}
+          {{ page.footer|striptags }}
+        </div>
+      {% endif %}
+    </footer>
+
+    <js-bottom-placeholder token="{{ placeholder_token }}">
+  </body>
+</html>
+

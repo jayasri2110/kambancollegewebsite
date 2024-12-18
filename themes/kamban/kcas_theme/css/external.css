@@ -1,0 +1,139 @@
+
+/* Styles for the Top Menu Navigation Bar */
+.menu-header {
+    background-color: #160691; /* Background color for the menu bar */
+    padding: 10px 0; /* Padding around the menu */
+    font-size: small;
+}
+
+.menu-header ul {
+    list-style: none; /* Remove bullet points from the list */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+    display: flex; /* Use flexbox to arrange items in a row */
+    justify-content: center; /* Center the menu items */
+}
+
+.menu-header ul li {
+    margin: 0 15px; /* Space between menu items */
+}
+
+.menu-header ul li a {
+    text-decoration: none; /* Remove underline from links */
+    color: white; /* Text color */
+    font-weight: bold; /* Bold text */
+    padding: 10px 15px; /* Padding inside each menu item */
+    transition: background-color 0.3s; /* Smooth background color transition on hover */
+}
+
+/* Hover Effect */
+.menu-header ul li a:hover {
+    color: #f8e407; /* Change text color on hover */
+    border-radius: 5px; /* Rounded corners on hover */
+}
+
+/* Focus Effect */
+.menu-header ul li a:focus {
+    outline: 2px solid #f8e407; /* Outline for focused items */
+}
+
+/* Active Menu Item */
+.menu-header ul li.active a {
+    color: #fff; /* Text color for the active item */
+    border-radius: 5px; /* Rounded corners for active item */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for active items */
+}
+
+/* Styles for the Top Header */
+/* Styles for the Top Header Menu */
+.top-header-menu {
+    list-style: none; /* Remove bullet points */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+    display: flex; /* Use flexbox to arrange items in a row */
+    justify-content: flex-end; /* Align items to the right */
+}
+
+.top-header-menu li {
+    margin-left: 15px; /* Space between items */
+}
+
+.top-header-menu li a {
+    text-decoration: none; /* Remove underline from links */
+    color: #007bff; /* Link color */
+}
+
+.top-header-menu li a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+.top-header {
+    margin: 0; /* Ensure no margin */
+    padding: 10px 0; /* Keep padding for spacing */
+}
+/* Footer Section Styles */
+/* Footer Styles */
+.footer {
+    background-color: white; /* Set footer background color */
+    padding: 20px 0; /* Padding around footer */
+}
+
+.footer .container {
+    display: flex; /* Use flexbox to arrange footer blocks in a row */
+    justify-content: space-between; /* Evenly distribute space between blocks */
+    flex-wrap: wrap; /* Allow wrapping for responsiveness */
+}
+
+.footer .container .col-md-3 {
+    flex: 1; /* Make each block take up equal width */
+    max-width: 25%; /* Each block takes 25% of the footer width */
+    margin: 10px; /* Add spacing between blocks */
+    box-sizing: border-box; /* Include padding and border in width */
+}
+
+.footer .container .col-md-3 .block-content {
+    background-color:white; /* Set background color for the block */
+    padding: 15px; /* Add padding inside each block */
+    border: 1px solid #ddd; /* Optional border around block */
+    border-radius: 5px; /* Optional rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional box-shadow */
+}
+
+/* Ensure blocks are responsive on smaller screens */
+@media (max-width: 768px) {
+    .footer .container .col-md-3 {
+        flex: 1 1 100%; /* Full width block on small screens */
+        max-width: 100%; /* Allow blocks to stack vertically */
+        margin-bottom: 20px; /* Add space between stacked blocks */
+    }
+}
+/* Targeting the second sidebar */
+.region-sidebar-second {
+    background-color: transparent !important;
+    background-image: url('path_to_your_image.jpg') !important;
+    background-size: cover !important;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3) !important;
+}
+/* Footer Styles */
+/* Footer Styles */
+/* Remove link styling in footer */
+.container a {
+    text-decoration: none; /* No underline */
+    color: inherit; /* Inherit text color */
+    cursor: default; /* Change cursor to default */
+  }
+  /* In your custom theme stylesheet (e.g., styles.css) */
+.menu-parent.active-trail > .menu-child {
+    display: block; /* Show child menu items */
+}
+
+.menu-parent > .menu-child {
+    display: none; /* Hide child menu items */
+}
+.copy{
+    background-color: #007bff;
+}
+
+
+
+  
+

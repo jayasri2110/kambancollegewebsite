@@ -1,0 +1,18 @@
+global-styling:
+  css:
+    theme:
+      css/style.css: {}
+  js:
+    js/script.js: {}
+    dependencies:
+      - core/jquery
+
+external-styles:
+  css:
+    theme:
+      css/external.css: {}
+
+
+
+
+

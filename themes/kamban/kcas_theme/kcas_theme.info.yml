@@ -1,0 +1,38 @@
+name: 'KC College Theme'
+type: theme
+description: 'A custom theme for KCAS website with customized layout'
+package: Custom
+core_version_requirement: ^10
+base theme: stable9  # Using stable9 base theme
+libraries:
+  - kcas_theme/global-styling
+  - kcas_theme/external-styles
+
+regions:
+  top_header: 'Top Header'
+  logo_header: 'Logo Header'
+  menu_header: 'Menu Header'
+  slider: 'Slider'
+  content: 'Content'
+  sidebar_first: 'Sidebar First'
+  sidebar_second: 'Sidebar Second'
+  recent_posts: 'Recent Posts'
+  events_activities: 'Events & Activities'
+  gallery_title: 'Gallery Title'
+  gallery_top_left: 'Gallery Top Left'
+  gallery_top_center: 'Gallery Top Center'
+  gallery_top_right: 'Gallery Top Right'
+  blue_bottom_block_1: 'Blue Bottom Block 1'
+  blue_bottom_block_2: 'Blue Bottom Block 2'
+  blue_bottom_block_3: 'Blue Bottom Block 3'
+  blue_bottom_block_4: 'Blue Bottom Block 4'
+  footer_first: 'Footer First'
+  footer_second: 'Footer Second'
+  footer_third: 'Footer Third'
+  footer_fourth: 'Footer Fourth'
+  copy: 'copy'
+
+  
+
+  
+
